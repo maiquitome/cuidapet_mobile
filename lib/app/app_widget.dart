@@ -10,12 +10,11 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(390, 844),
+      designSize: const Size(414, 896),
       builder: () => MaterialApp(
+        initialRoute: '/auth/',
         builder: asuka.builder,
-        navigatorObservers: <NavigatorObserver>[
-          asuka.asukaHeroController
-        ],
+        navigatorObservers: <NavigatorObserver>[asuka.asukaHeroController],
       ).modular(),
     );
   }
