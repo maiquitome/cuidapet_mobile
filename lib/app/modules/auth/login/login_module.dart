@@ -1,9 +1,8 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import './home/auth_home_page.dart';
-import './login/login_module.dart';
+import './login_page.dart';
 
-class AuthModule extends Module {
+class LoginModule extends Module {
   @override
   final List<Bind<Object>> binds = <Bind<Object>>[];
 
@@ -11,8 +10,7 @@ class AuthModule extends Module {
   final List<ModularRoute> routes = <ModularRoute>[
     ChildRoute<dynamic>(
       Modular.initialRoute,
-      child: (_, dynamic args) => AuthHomePage(authStore: Modular.get()),
+      child: (_, dynamic args) => const LoginPage(),
     ),
-    ModuleRoute<dynamic>('/login', module: LoginModule()),
   ];
 }
