@@ -27,7 +27,7 @@ class _AuthHomePageState extends State<AuthHomePage> {
         if (userModel != null && userModel.email.isNotEmpty) {
           Navigator.pushReplacementNamed(context, '/home');
         } else {
-          Navigator.pushReplacementNamed(context, '/auth/login');
+          Navigator.pushReplacementNamed(context, '/auth/login/');
         }
       },
     );
