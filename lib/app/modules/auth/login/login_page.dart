@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                   Image.asset(
                     'assets/images/logo.png',
                     height: 130.adaptHeight,
-                    width: 162.adaptWidth,
+                    width: 162.adaptHeight,
                     fit: BoxFit.fill,
                   ),
                   LoginForm(defaultPadding),
